@@ -1,6 +1,6 @@
 // Tokens in JavaScript:
 
-// 👉 Tokens = Smallest building blocks of a JavaScript program.
+// Tokens = Smallest building blocks of a JavaScript program.
 
 // JavaScript ke code ko todhoge to ye chhote pieces milte hain:
 

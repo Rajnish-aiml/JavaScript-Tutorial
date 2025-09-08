@@ -20,7 +20,7 @@
 
 // Reserved keywords ka use nahi kar sakte.
 
-// Invalid: var, for, class, function
+// Invalid: var, for, class, function, example of reserved keyword.
 
 // Unicode characters allow hain (advance me emojis bhi).
 

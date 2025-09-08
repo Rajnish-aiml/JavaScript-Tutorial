@@ -27,11 +27,11 @@ console.log(a); // use to print something on console
 // Introduced: ES6 (2015)
 // Scope: Block-scoped { } ke andar limited.
 // Hoisting: Hoti hai, but Temporal Dead Zone (TDZ) ke wajah se use karne se pehle error aata hai.
-// Redeclare: ❌ Not allowed (same scope me).
-// Reassign: ✅ Allowed.
+// Redeclare: Not allowed (same scope me).
+// Reassign: Allowed.
 
 // let x;  valid
-// let x = 5;  not validk
+// let x = 5;  not valid
 // let x= 8; not valid
 
 let x = 6; // valid
@@ -46,8 +46,8 @@ console.log(y);
 // Introduced: ES6 (2015)
 // Scope: Block-scoped.
 // Hoisting: Same as let (TDZ ke wajah se pehle use karne par error).
-// Redeclare: ❌ Not allowed.
-// Reassign: ❌ Not allowed.
+// Redeclare: Not allowed.
+// Reassign:  Not allowed.
 // use: for constant value 
 
 // const y; not valid 
@@ -56,4 +56,4 @@ const z = 4; //valid
 
 // const z; not valid
 console.log(z);
-//Important: Agar const ke andar object/array rakha ho toh uske properties change kar sakte ho, par variable ko reassign nahi kar sakte ('=' assinghment operator ka use karke).
+//Important: Agar const ke andar object/array rakha ho toh uske properties change kar sakte ho, par variable ko reassign nahi kar sakte ('=' assinghment operator ka use karke), directly.

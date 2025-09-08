@@ -6,10 +6,10 @@
 // Ye ek method hai jo object ko freeze kar deta hai.
 
 // Matlab:
-// ✅ Existing properties ko change/update nahi kar sakte.
-// ✅ Naye properties add nahi kar sakte.
-// ✅ Properties delete nahi kar sakte.
-// ✅ Nested object freeze nahi hota (sirf shallow freeze hota hai).
+//  Existing properties ko change/update nahi kar sakte.
+//  Naye properties add nahi kar sakte.
+//  Properties delete nahi kar sakte.
+//  Nested object freeze nahi hota (sirf shallow freeze hota hai).
 
 //Example 1 (Basic freeze):
 const car = {
@@ -19,9 +19,9 @@ const car = {
 
 Object.freeze(car);
 
-car.brand = "BMW";   // ❌ Change nahi hoga
-car.year = 2025;     // ❌ Naya property add nahi hoga
-delete car.model;    // ❌ Delete nahi hoga
+car.brand = "BMW";   //  Change nahi hoga
+car.year = 2025;     // Naya property add nahi hoga
+delete car.model;    //  Delete nahi hoga
 
 console.log(car); // { brand: "Tesla", model: "X" }
 
@@ -36,8 +36,8 @@ const user = {
 
 Object.freeze(user);
 
-user.name = "Amit";         // ❌ Change nahi hoga
-user.address.city = "Delhi"; // ✅ Change hoga (nested freeze nahi hua)
+user.name = "Amit";         // Change nahi hoga
+user.address.city = "Delhi"; //  Change hoga (nested freeze nahi hua)
 
 console.log(user);
 // { name: "Rajnish", address: { city: "Delhi" } }
@@ -46,4 +46,4 @@ console.log(user);
 const obj = { a: 1 };
 Object.freeze(obj);
 
-console.log(Object.isFrozen(obj)); // true ✅
+console.log(Object.isFrozen(obj)); // true 

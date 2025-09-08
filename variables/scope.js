@@ -20,24 +20,24 @@ function test() {
   var x = 5;   // local
   let y = 6;   // local
   const z = 7; // local
-  console.log(x, y, z); // ✅ accessible here
+  console.log(x, y, z); //  accessible here
 }
-// console.log(x); ❌ Error (not accessible outside)
+// console.log(x);  Error (not accessible outside)
 
 
 // 3. Block Scope { }:
 // Introduced in ES6 with let and const.
 // Variable declared inside { } block → accessible only inside that block.
-// var ❌ ignores block scope (it escapes).
+// var  ignores block scope (it escapes).
 
 {
-  var p = 100;   // ❌ not block-scoped (var not respect block)
-  let q = 200;   // ✅ block-scoped
-  const r = 300; // ✅ block-scoped
+  var p = 100;   // not block-scoped (var not respect block)
+  let q = 200;   //  block-scoped
+  const r = 300; //  block-scoped
 }
-console.log(p); // ✅ 100
-// console.log(q); ❌ Error
-// console.log(r); ❌ Error
+console.log(p); // 100
+// console.log(q); Error
+// console.log(r); Error
 
 
 // 4. Lexical Scope (Closure):
@@ -50,7 +50,7 @@ console.log(p); // ✅ 100
 function outer() {
    name = "Rajnish";
   function inner() {
-    console.log("Hello " + name); // ✅ inner can access outer
+    console.log("Hello " + name); //  inner can access outer
   }
   inner();
 }
