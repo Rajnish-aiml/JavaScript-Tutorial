@@ -93,6 +93,7 @@ let numbers = [1, 2, 3, 4];
 function GREET() {
   return "Hello!";
 }
+
 //if we copy any refernce data type then any operations or method applied to that copied value then it will also affect or change the original value.
 
 //in Short:

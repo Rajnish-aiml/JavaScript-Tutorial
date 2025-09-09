@@ -36,7 +36,7 @@ switch (expression) {
 // If a default is not present and no case matches, nothing happens within the switch block.
 
 
-// note: 👉 The default case doesn't need to have the last case in a switch block:
+// note: 👉 The default case doesn't need to have the last case in a switch block.
 
 // 👉  If default is not the last case in the switch block, remember to end the default case with a break.
 
