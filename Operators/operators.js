@@ -6,6 +6,7 @@ console.log(2<8<4) // true
 // example:
  let a = 10, b = 3;
 
+console.log("Assignment:")
 console.log(a + b); // 13 
 console.log(a - b); // 7  
 console.log(a * b); // 30 
@@ -31,6 +32,7 @@ console.log('\n');
 //3. Comparison Operators:
 //These compare two values and return a boolean (true or false).
 //example:
+console.log("Comparison:")
 console.log(5 == "5");   // true  (loose equal, type coercion)
 console.log(5 === "5");  // false (strict equality check)
 console.log(5 != "5");   // false
@@ -45,6 +47,7 @@ console.log('\n');
 //4. Logical Operators:
 // These are used to combine conditional statements and return a boolean value.
 //example:
+console.log("Logical:")
 console.log(true && false); // false (Logical AND)
 console.log(true || false); // true  (Logical OR)
 console.log(!true);         // false (Logical NOT)
@@ -55,6 +58,7 @@ console.log('\n');
 //5. Bitwise Operators:
 //These operators work on the binary representation of numbers (32-bit integers).
 //example:
+console.log("Bitwise:")
 console.log(5 & 1);  // 1  (AND)
 console.log(5 | 1);  // 5  (OR)
 console.log(5 ^ 1);  // 4  (XOR)
@@ -68,11 +72,11 @@ console.log('\n');
 let str1 = "Hello";
 let str2 = "World";
 let result = str1 + " " + str2; // result is "Hello World"
-console.log('\n');
 
 
 //7. Ternary (Conditional) Operator:
 //This is a shortcut for an if-else statement. It's the only JS operator that takes three operands.
+console.log("Ternary:")
 let age = 18;
 let vote = (age >= 18) ? "Yes" : "No";
 console.log(vote); // "Yes"
@@ -80,6 +84,7 @@ console.log('\n');
 
 //8. Unary Operators:
 //operates on single operand
+console.log("Unary:")
 let q = 5;
 console.log(+q);q    // 5 (unary plus → number me convert)
 console.log(-q);     // -5 (negation)
@@ -91,6 +96,7 @@ console.log('\n');
 
 //9. Type Operators:
 // 2 types: i) typeof ii) instanceof
+console.log("Type:")
 console.log(typeof 123);   // "number"
 console.log(typeof "abc"); // "string"
 
@@ -108,6 +114,7 @@ console.log('\n');
 // i) Pre-Increment (++a):
 // Pehle value badhao, fir use karo.
 
+console.log("pre-increment:")
 let w = 5;
 console.log(++w); // 6 (pehle increment hua, fir print hua)
 console.log(w);   // 6
@@ -116,6 +123,7 @@ console.log('\n');
 // ii) Post-Increment (a++):
 // Pehle value use karo, fir increment karo.
 
+console.log("post-increment:")
 let z = 5;
 console.log(z++); // 5 (pehle print hua, fir badha)
 console.log(z);   // 6
@@ -123,18 +131,21 @@ console.log('\n');
 
 
 // iii) Pre-Decrement (--a)
+console.log("pre-decrement:")
 let c = 5;
 console.log(--c); // 4
 console.log(c);   // 4
 console.log('\n');
 
 // iv) Post-Decrement (a--)
+console.log("post-decrement:")
 let d = 5;
 console.log(d--); // 5
 console.log(d);   // 4
 console.log('\n');
 
 // 11. Relational Operators: in checks if a property exists in an object.
+console.log("Relational:")
 const person = {firstName: "John", lastName: "Doe"};
 "firstName" in person; // returns true
 console.log('\n');
@@ -145,7 +156,7 @@ console.log('\n');
 // 12. Nullish Coalescing Operator (??):-
 //?? ka kaam hai: agar left side null ya undefined ho tabhi right side return kare.
 // Baaki falsy values (0, "", false) ko valid manega, unlike ||.
-
+console.log("Nullish:")
 let user = null;
 console.log(user ?? "Guest"); // "Guest"
 
@@ -165,7 +176,7 @@ console.log('\n');
 // Kabhi kabhi deeply nested object properties hoti hain jo exist nahi karti.
 // Normally → error aata.
 // ?. use karke safe check kar sakte hain.
-
+console.log("Chaining operator:")
 let userx = {
   profile: { name: "Raj" }
 };
@@ -195,6 +206,8 @@ console.log('\n');
 
 
 // Array
+console.log("Spread:")
+
 let arr = [1, 2, 3];
 let arr2 = [...arr, 4, 5];
 console.log(arr2); // [1, 2, 3, 4, 5]
@@ -218,6 +231,8 @@ console.log('\n');
 // Mostly use: function arguments, destructuring.
 
 // Function
+console.log("Rest:")
+
 function sum(...nums) {
   return nums.reduce((a, b) => a + b, 0);
 }

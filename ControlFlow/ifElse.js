@@ -40,7 +40,7 @@ if (age >= 18) {
   console.log("You are not yet eligible to vote.");
 }
 
-
+let time;
 if (time < 10) {
   greeting = "Good morning";
 } else if (time < 20) {

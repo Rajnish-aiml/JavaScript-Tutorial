@@ -19,3 +19,9 @@ console.log(x); // printing x
 */
 let y = 20;
 console.log(y);
+
+if (NaN) {
+    console.log("true");
+} else{
+    console.log("false")
+}
