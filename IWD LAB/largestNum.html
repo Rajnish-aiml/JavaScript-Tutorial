@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Largest Three Number</title>
+  </head>
+  <body style="display: flex; flex-direction: column; align-items: center">
+    <h3 style="color: rgb(216, 53, 44)">Largest number program</h3>
+    <input
+      type="number"
+      name="number"
+      id="num1"
+      placeholder="Enter 1st number: "
+    />
+    <br /><br />
+    <input
+      type="number"
+      name="number"
+      id="num2"
+      placeholder="Enter 2nd number"
+    /><br /><br />
+    <input
+      type="number"
+      name="number"
+      id="num3"
+      placeholder="Enter 3rd number"
+    /><br /><br />
+
+    <button onclick="calculate()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+      function calculate() {
+        let num1 = document.getElementById("num1").value;
+        num1 = Number(num1)
+        let num2 = document.getElementById("num2").value;
+        num2 = Number(num2)
+        let num3 = document.getElementById("num3").value;
+        num3 = Number(num3)
+        
+        let result = document.getElementById("result");
+        if (num1 >= num2 && num1 >= num3) {
+          result.innerHTML = `${num1} is the LARGEST NUMBER .`
+          result.style.color = 'green';
+          result.style.fontWeight = 'bold';
+        } else if(num2 >= num3){
+          result.innerHTML = `${num2} is the LARGEST NUMBER .`
+          result.style.color = 'orange';
+          result.style.fontWeight = 'bold';
+        }else{
+          result.innerHTML = `${num3} is the LARGEST NUMBER .`
+          result.style.color = 'blue';
+          result.style.fontWeight = 'bold';
+        }
+      }
+    </script>
+  </body>
+</html>

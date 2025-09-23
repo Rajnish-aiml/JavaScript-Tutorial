@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Of Number</title>
+</head>
+<body style="text-align: center; margin-top: 40px;">
+     <h2>Factorial Program</h2>
+    <input style="font-size: 20px; margin: 10px auto; padding: 4px;" type="number" name="number" id="num" placeholder="Enter number">
+    <button onclick="showfactorial()" style="border: 2px solid black; padding: 3px;">Find Factorial</button>
+    <p id="result" style="font-size: 30px;"><h1></h1></p>
+
+    <script>
+        // recursive function
+        function factorial(n){
+            if(n === 1 || n === 0) return 1;
+            return n * factorial(n-1);
+        }
+
+        // DOM handaling function
+        function showfactorial(){
+            let num = Number(document.querySelector("#num").value)
+            let result = document.querySelector("#result");
+            if (num < 0) {
+                result.textContent = `Factorial for negative number is not defined.`
+                result.style.color = "red";
+            }
+
+            let fact = factorial(num); // recursive function call
+            result.textContent = `Factorial of ${num} is ${fact}`;
+            result.style.color = 'green';
+        }
+    </script>
+</body>
+</html>
+
+
